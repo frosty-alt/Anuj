@@ -1,14 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
+import { StrictMode } from "react";
  
-import User from "./User";
-function main() {
-    <div>
-
-    
-<User name="Niroj"/>
-</div>
-}
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<User/>); 
-export default main;
+import Counter from "./User";
+createRoot(document.getElementById("root")).render(
+    <Counter/>
+);

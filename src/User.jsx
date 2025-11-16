@@ -1,13 +1,12 @@
-function User(props) {
-  console.log(props);
-    return (
-      
-        <div>
-            <h1>This is User Component</h1>
-            <h2>{props.name}</h2>
-            
-        </div>
-    );
+import React from 'react'
+
+const Counter = () => {
+  return (
+    <div className='counter-component'>
+      <p> YOU HAVE CLICKED 0 TIMES</p>
+      <button id='btn'>CLICK ME</button>      
+    </div>
+  )
 }
 
-export default User;
+export default Counter
